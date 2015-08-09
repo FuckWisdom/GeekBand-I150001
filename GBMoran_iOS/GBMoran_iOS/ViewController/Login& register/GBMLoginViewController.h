@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GBMLoginViewController.h
 //  GBMoran_iOS
 //
 //  Created by 柴勇峰 on 8/9/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GBMLoginViewController : UIViewController
 
 @end
-

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "GBMSquareViewController.h"
+#import "IWTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    IWTabBarViewController *tabVC = [[IWTabBarViewController alloc] init];
+    self.window.rootViewController = tabVC;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 
