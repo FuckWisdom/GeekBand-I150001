@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E923D0221B79642500E45066 /* Square.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E923D0211B79642500E45066 /* Square.storyboard */; };
+		E923D0231B79642500E45066 /* Square.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E923D0211B79642500E45066 /* Square.storyboard */; };
+		E923D0261B79685600E45066 /* GBMSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E923D0251B79685600E45066 /* GBMSquareCell.m */; };
+		E923D0271B79685600E45066 /* GBMSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E923D0251B79685600E45066 /* GBMSquareCell.m */; };
 		E94E73F31B77447200EDC915 /* IWTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E73EA1B77447200EDC915 /* IWTabBarViewController.m */; };
 		E94E73F41B77447200EDC915 /* IWTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E73EA1B77447200EDC915 /* IWTabBarViewController.m */; };
 		E94E73F51B77447200EDC915 /* IWBadgeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E94E73EE1B77447200EDC915 /* IWBadgeButton.m */; };
@@ -125,6 +129,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E923D0211B79642500E45066 /* Square.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Square.storyboard; sourceTree = "<group>"; };
+		E923D0241B79685600E45066 /* GBMSquareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBMSquareCell.h; sourceTree = "<group>"; };
+		E923D0251B79685600E45066 /* GBMSquareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBMSquareCell.m; sourceTree = "<group>"; };
 		E94E73E91B77447200EDC915 /* IWTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWTabBarViewController.h; sourceTree = "<group>"; };
 		E94E73EA1B77447200EDC915 /* IWTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWTabBarViewController.m; sourceTree = "<group>"; };
 		E94E73ED1B77447200EDC915 /* IWBadgeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWBadgeButton.h; sourceTree = "<group>"; };
@@ -402,6 +409,9 @@
 			children = (
 				E9A813301B772767008708CA /* GBMSquareView.h */,
 				E9A813311B772767008708CA /* GBMSquareView.m */,
+				E923D0211B79642500E45066 /* Square.storyboard */,
+				E923D0241B79685600E45066 /* GBMSquareCell.h */,
+				E923D0251B79685600E45066 /* GBMSquareCell.m */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -665,6 +675,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A813E51B772EA2008708CA /* SVProgressHUD.bundle in Resources */,
+				E923D0221B79642500E45066 /* Square.storyboard in Resources */,
 				E9A812F61B77103E008708CA /* LaunchScreen.xib in Resources */,
 				E9A8131A1B772650008708CA /* Main.xcassets in Resources */,
 				E9A812F31B77103E008708CA /* Images.xcassets in Resources */,
@@ -676,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A813E61B772EA2008708CA /* SVProgressHUD.bundle in Resources */,
+				E923D0231B79642500E45066 /* Square.storyboard in Resources */,
 				E9A8131B1B772650008708CA /* Main.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,6 +718,7 @@
 				E9A8132E1B77275B008708CA /* GBMLoginView.m in Sources */,
 				E9A813D21B772DC4008708CA /* UIImageView+AFNetworking.m in Sources */,
 				E9A813D41B772DC4008708CA /* UIProgressView+AFNetworking.m in Sources */,
+				E923D0261B79685600E45066 /* GBMSquareCell.m in Sources */,
 				E9A8133A1B772794008708CA /* GBMRegisterView.m in Sources */,
 				E9A814241B772FFA008708CA /* UIImage+GIF.m in Sources */,
 				E9A813D61B772DC4008708CA /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -755,6 +768,7 @@
 				E9A813D51B772DC4008708CA /* UIProgressView+AFNetworking.m in Sources */,
 				E9A813CF1B772DC4008708CA /* UIAlertView+AFNetworking.m in Sources */,
 				E9A813CB1B772DC4008708CA /* AFNetworkActivityIndicatorManager.m in Sources */,
+				E923D0271B79685600E45066 /* GBMSquareCell.m in Sources */,
 				E9A814151B772FFA008708CA /* SDImageCache.m in Sources */,
 				E9A813BF1B772DC4008708CA /* AFURLConnectionOperation.m in Sources */,
 				E9A814171B772FFA008708CA /* SDWebImageCompat.m in Sources */,

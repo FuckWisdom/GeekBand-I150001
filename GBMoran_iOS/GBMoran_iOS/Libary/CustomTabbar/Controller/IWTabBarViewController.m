@@ -11,6 +11,8 @@
 #import "GBMSquareViewController.h"
 #import "GBMMyViewController.h"
 #import "UIColor+AddColor.h"
+#define VCFromSB(SB,ID) [[UIStoryboard storyboardWithName:SB bundle:nil] instantiateViewControllerWithIdentifier:ID]
+#import "GBMLoginViewController.h"
 
 @interface IWTabBarViewController () <IWTabBarDelegate>
 /**
@@ -31,6 +33,7 @@
     // 初始化所有的子控制器
     [self setupAllChildViewControllers];
 }
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -71,11 +74,11 @@
  */
 - (void)setupAllChildViewControllers
 {
-    // 1.首页
-    GBMSquareViewController *squareVC = [[GBMSquareViewController alloc] init];
+    // 1.广场
+    GBMSquareViewController *squareVC = VCFromSB(@"Square", @"squareVC");
     [self setupChildViewController:squareVC title:@"广场" imageName:@"square" selectedImageName:@"square_selected"];
     
-    // 2.消息
+    // 2.我的
     GBMMyViewController *myVC = [[GBMMyViewController alloc] init];
     [self setupChildViewController:myVC title:@"我的" imageName:@"my" selectedImageName:@"my_selected"];
     
@@ -99,7 +102,7 @@
     // 设置选中的图标
     UIImage *selectedImage = [UIImage imageNamed:selectedImageName];
 
-        childVc.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    childVc.tabBarItem.selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     // 2.包装一个导航控制器
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:childVc];

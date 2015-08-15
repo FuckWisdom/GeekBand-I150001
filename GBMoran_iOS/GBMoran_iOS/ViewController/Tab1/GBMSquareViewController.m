@@ -7,8 +7,10 @@
 //
 
 #import "GBMSquareViewController.h"
-@interface GBMSquareViewController ()
+#import "GBMSquareCell.h"
 
+@interface GBMSquareViewController ()<UITableViewDelegate, UITableViewDataSource>
+@property (nonatomic, strong) NSArray *scrollArray;
 @end
 
 @implementation GBMSquareViewController
@@ -18,7 +20,32 @@
     // Do any additional setup after loading the view.
     
 //    self.title = @"附近1000米";
+    
+    self.scrollArray = [NSArray arrayWithObjects:@"1", @"2", @"3", @"4", nil];
 }
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 10;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *str = @"squareCell";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:str];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:str];
+    }
+    return cell;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
